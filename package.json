@@ -1,0 +1,15 @@
+{
+  "name": "expjs",
+  "version": "1.0.0",
+  "description": "This is for weeks 13-14",
+  "keywords": [
+    "expressjs"
+  ],
+  "license": "ISC",
+  "author": "Sean Lebida",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
