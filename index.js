@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(req, res){
-   res.send("Hello world!");
+   res.send("For God so loved the world, that he gave his only Son, that whoever believes in him should not perish, but have eternal life. John 3:16");
 });
 
-app.listen(3000);
+app.listen(3007);
