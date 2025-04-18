@@ -15,7 +15,21 @@ app.get('/316', function(req, res){
 });
 
 app.post('/316', function(req, res){
-   res.send("You just called the post method at '/316'!\n");
+   res.send("You just called the post method at '/316' with a POST request!\n");
 });
+
+app.all('/test', function(req, res){
+    res.send("HTTP method doesn't have any effect on this route!");
+ });
+
+var things = require('./things.js');
+
+app.get('/hello', function(req, res){
+   res.send("Hello World!");
+});
+
+//both index.js and things.js should be in same directory
+app.use('/things', things);
+
 
 app.listen(3008);
