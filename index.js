@@ -31,5 +31,20 @@ app.get('/hello', function(req, res){
 //both index.js and things.js should be in same directory
 app.use('/things', things);
 
-
+app.get('/', function(req, res){
+    res.send("GET Request!");
+ });
+ 
+ app.post('/', function(req, res){
+    res.send("POST Request!");
+ });
+ 
+ app.put('/', function(req, res){
+    res.send("PUT Request!");
+ });
+ 
+ app.delete('/', function(req, res){
+    res.send("DELETE Request!");
+ });
+ 
 app.listen(3008);
